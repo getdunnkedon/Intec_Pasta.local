@@ -206,6 +206,28 @@
 .pasta__AboutUs {
   height: 616px;
   background: #ffffff;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 26%, #020024 100%);
+  background: linear-gradient(to left, transparent, white), url('../img/bgONas.png');
+  background-position: right;
   background-repeat: no-repeat;
+  display: flex;
+}
+.flex__textBlock {
+  display: flex;
+  align-items: center;
+}
+.container__AboutUsBox {
+  height: 381px;
+  width: 514px;
+  background-color: aquamarine;
+}
+/**/
+.pasta__Delivery {
+  height: 621px;
+  background-color: #EEDEBF;
+  display: flex;
+}
+/**/
+.pasta__DeliveryZone {
+  height: 540px;
+  background-color: white;
 }
