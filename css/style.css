@@ -218,7 +218,30 @@
 .container__AboutUsBox {
   height: 381px;
   width: 514px;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container__AboutUsBox :first-child {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 168.4%;
+}
+.container__AboutUsBox :nth-child(2) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 168.4%;
+}
+.container__AboutUsBox :nth-child(3) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
 }
 /**/
 .pasta__Delivery {
