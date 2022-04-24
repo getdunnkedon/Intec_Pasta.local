@@ -193,6 +193,7 @@
 }
 /**/
 .pasta__ourProducts {
+  background: #FBF8F8;
   height: 1029px;
   display: flex;
   align-items: center;
@@ -206,7 +207,7 @@
 .pasta__AboutUs {
   height: 616px;
   background: #ffffff;
-  background: linear-gradient(to left, transparent, white), url('../img/bgONas.png');
+  background: linear-gradient(90deg, #FBF8F8 40.92%, rgba(254, 254, 254, 0.93) 48.78%, rgba(254, 254, 254, 0.84) 55.54%, rgba(251, 248, 248, 0) 69.05%), url('../img/bgONas.png');
   background-position: right;
   background-repeat: no-repeat;
   display: flex;
@@ -247,10 +248,78 @@
 .pasta__Delivery {
   height: 621px;
   background-color: #EEDEBF;
+  background-image: url('../img/zoneBGblock.png'), url('../img/zoneMacarons.png');
+  background-repeat: no-repeat;
+  background-position: left top,top right;
   display: flex;
 }
 /**/
 .pasta__DeliveryZone {
   height: 540px;
-  background-color: white;
+  background-image: url('../img/zoneMap.png');
+  background-repeat: no-repeat;
+}
+.container__blockzoneDelivery {
+  background: white;
+  width: 410px;
+  height: 540px;
+  align-items: center;
+  display: flex;
+}
+.container__zoneDelivery {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 287px;
+  height: 365px;
+}
+.container__zoneDelivery :first-child {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+}
+.container__zoneDelivery :nth-child(2) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+}
+.container__zoneDelivery :nth-child(3) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+}
+/**/
+.flex__Questions {
+  display: flex;
+  align-items: center;
+}
+.pasta__Questions {
+  height: 966px;
+  display: flex;
+  background: linear-gradient(89.57deg, rgba(0, 0, 0, 0.72) 2.28%, rgba(0, 0, 0, 0) 76.28%), linear-gradient(89.84deg, #2D3134 53.99%, rgba(38, 43, 47, 0.58) 84.44%), url('../img/questionsBG.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.container__contactUs {
+  height: 471px;
+  width: 479px;
+  color: white;
+}
+.contactUs__button {
+  height: 46px;
+  width: 136px;
+  background-color: #D38B13;
+}
+/**/
+.footer {
+  height: 271px;
+  background-color: blue;
+  backdrop-filter: blur(15px);
 }
