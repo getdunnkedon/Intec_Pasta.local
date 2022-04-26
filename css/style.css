@@ -97,7 +97,7 @@
 }
 .wrapper__doubleBG {
   height: 616px;
-  background-image: url('../img/noodle.png'), url('../img/backgroundImage.png');
+  background: url('../img/noodle.png'), linear-gradient(to right, #66536B 0%, #66536B 40%, white 40%, white 100%);
   background-repeat: no-repeat, no-repeat;
   background-position: center right -190px, left;
 }
@@ -252,6 +252,28 @@
   background-repeat: no-repeat;
   background-position: left top,top right;
   display: flex;
+}
+.container__deliveryText {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pasta__Delivery ul.a {
+  list-style-type: decimal;
+}
+.a li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.a li:nth-child(3) {
+  border: none;
 }
 /**/
 .pasta__DeliveryZone {
