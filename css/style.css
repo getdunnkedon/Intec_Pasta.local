@@ -274,11 +274,11 @@
   width: 287px;
   height: 365px;
 }
-.container__zoneDelivery :first-child {
+.container__zoneDelivery p:first-child {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 29px;
   line-height: 168.4%;
 }
 .container__zoneDelivery :nth-child(2) {
@@ -289,6 +289,13 @@
   line-height: 168.4%;
 }
 .container__zoneDelivery :nth-child(3) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+}
+.block__adresses p:first-child {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -314,20 +321,67 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 300px;
 }
-input {
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: white;
-  background: none;
-  color: white;
-  width: 60%;
+.container__contactUs p:first-child {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 121.9%;
+  text-transform: uppercase;
+}
+.container__contactUs p:nth-child(2) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 155.4%;
 }
 input::placeholder {
   color: #dbdbdb;
 }
-input:focus {
-  border-color: grey;
+.form-control {
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: white;
+  color: white;
+}
+.form-control::placeholder {
+  color: white;
+}
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+.floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 60%;
+}
+.floating-label-group .floating-label {
+  font-size: 13px;
+  color: transparent;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: ease-in 120ms;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 12px;
+  opacity: 1;
+  color: white;
+}
+.floating-label-group :focus::placeholder {
+  color: transparent;
 }
 .contactUs__button {
   height: 46px;
