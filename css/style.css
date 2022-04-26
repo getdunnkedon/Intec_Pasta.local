@@ -260,7 +260,7 @@
   align-items: flex-start;
 }
 .pasta__Delivery ul.a {
-  list-style-type: decimal;
+  list-style-type: none;
 }
 .a li {
   font-family: 'Montserrat';
