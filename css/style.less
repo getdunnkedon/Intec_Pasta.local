@@ -339,11 +339,31 @@
   height: 471px;
   width: 479px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: white;
+  background: none;
+  color: white;
+  width: 60%;
+}
+
+input::placeholder{
+  color: #dbdbdb;
+}
+input:focus {
+  border-color: grey
 }
 .contactUs__button{
   height: 46px;
   width: 136px;
   background-color: #D38B13;
+  border: none;
+  color: white;
 }
 
 
