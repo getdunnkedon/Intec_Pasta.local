@@ -229,6 +229,27 @@
   width: 1213px;
   background-color: grey;
 }
+.ourProductsSelector__Button {
+  width: 196px;
+  height: 44px;
+  border: 1px solid #606060;
+  box-sizing: border-box;
+  border-radius: 22px;
+}
+.ourProductsSelector__Filter {
+  height: 27px;
+  background: transparent;
+  color: black;
+  border: none;
+  border-width: 0;
+  border-style: none;
+  outline: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168.4%;
+}
 /**/
 .pasta__AboutUs {
   height: 616px;
