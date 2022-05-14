@@ -21,10 +21,14 @@
 }
 .header_wrapper{
   background-color: @mainColor;
+  position: fixed;
+  z-index: 1000;
 }
 .navbarPasta{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-height: 83px;
 }
 .navbar-nav{
   align-items: center;
@@ -40,7 +44,7 @@
 }
 .nav-item a:hover{
   color: grey;
-  transition-delay: 100ms;
+  transition-delay: 300ms;
 }
 .phoneNumber{
   display: flex;
@@ -97,6 +101,7 @@
   .tabs li a:hover {
     opacity: 1;
     top: 0;
+    transition: 300ms;
   }
    
   .tabs-content {
@@ -142,7 +147,8 @@
   display: flex;
   flex-direction: column;
 }
-.container__tittle h1{
+.container__tittle h2{
+  max-width: 286px;
   font-family: @textFont;
   font-style: normal;
   font-size: 36px;
@@ -190,6 +196,7 @@
 }
 .team__profile:hover{
   border: 4px solid goldenrod;
+  transition: 300ms;
 }
 .team__profile:active{
   border: 4px solid goldenrod;
@@ -203,14 +210,14 @@
   height: 322px;
   width: 505px;
 }
-.team__descriptionTittle h1:first-child{
+.team__descriptionTittle h2:first-child{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
 }
-.team__descriptionTittle h1:nth-child(2){
+.team__descriptionTittle h2:nth-child(2){
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -251,7 +258,6 @@
 .pasta_ourProductsSelector{
   height: 729px;
   width: 1213px;
-  background-color: #cecece;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -470,12 +476,24 @@ border: none;
   font-size: 16px;
   line-height: 168.4%;
 }
-.block__adresses p:first-child{
+.block__adresses{
+  list-style: none;
+  padding-left: 15px;
+}
+.block__adresses li:before {
+  content: ">";
+  top: 0;
+  font-weight: bold;
+  position: absolute;
+  left: -30px;
+}
+.block__adresses li{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
+  position: relative;
 }
 /**/
 .flex__Questions{
@@ -524,8 +542,9 @@ input::placeholder{
 .form-control{
   background-color: transparent;
   outline: 0;
-  border-width: 0 0 2px;
-  border-color: white;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid white;
   color: white;
 }
 .form-control::placeholder{
@@ -579,7 +598,7 @@ input::placeholder{
 /**/
 .footer{
   height: 271px;
-  background-color: blue;
+  background-color: black;
   backdrop-filter: blur(15px);
   
 }
