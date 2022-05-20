@@ -1,6 +1,5 @@
 @mainColor: #EEDEBF;
 @pageColor: #FBF8F8;
-@textFont: 'Montserrat';
 @backgroundFirst: url('../img/backgroundImage.png');
 @backgroundSecond: url('../img/noodle.png');
 
@@ -12,6 +11,30 @@
 @backgroundQuestionsBG: url('../img/questionsBG.png');
 
 @backgroundZoneMap: url('../img/zoneMap.png');
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: local('../fonts/Montserrat-Regular.woff'),
+  url('../fonts/Montserrat-Bold.woff') format('woff'), /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src: local('../fonts/Montserrat-Regular.woff'),
+  url('../fonts/Montserrat-SemiBold.woff') format('woff'), /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: local('../fonts/Montserrat-Regular.woff'),
+  url('../fonts/Montserrat-Medium.woff') format('woff'), /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: local('../fonts/Montserrat-Regular.woff'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'), /* IE6-IE8 */
+}
 .wrapper{
   width: 100%;
 }
@@ -35,7 +58,7 @@
   justify-content: space-between;
 }
 .nav-item{
-  font-family: @textFont;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
 }
@@ -149,14 +172,12 @@
 }
 .container__tittle h2{
   max-width: 286px;
-  font-family: @textFont;
-  font-style: normal;
+  font-family: 'Montserrat';
   font-size: 36px;
   font-weight: 400;
 }
 .container__text p{
-  font-family: @textFont;
-  font-style: normal;
+  font-family: 'Montserrat';
   font-size: 19px;
   font-weight: 400;
   line-height: 168.4%;
@@ -212,21 +233,18 @@
 }
 .team__descriptionTittle h2:first-child{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
 }
 .team__descriptionTittle h2:nth-child(2){
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
 }
 .team__descriptionGeneral p{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
@@ -264,7 +282,6 @@
   justify-content: space-between;
   .products__tittle{
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 168.4%
@@ -299,7 +316,6 @@
   outline: none;
 
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
@@ -323,21 +339,18 @@
 }
 .card-title{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 168.4%;
 }
 .card-text{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 168.4%;
 }
 .card-price{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 168.4%;
@@ -381,21 +394,18 @@
   }
   :first-child{
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 168.4%;
   }
   :nth-child(2){
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 168.4%;
   }
   :nth-child(3){
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 168.4%;
@@ -422,7 +432,6 @@
 }
 .a li{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
@@ -457,21 +466,18 @@ border: none;
 
 .container__zoneDelivery p:first-child{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 29px;
   line-height: 168.4%;
 }
 .container__zoneDelivery :nth-child(2){
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
 }
 .container__zoneDelivery :nth-child(3){
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
@@ -489,7 +495,6 @@ border: none;
 }
 .block__adresses li{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 168.4%;
@@ -520,7 +525,6 @@ border: none;
 }
 .container__contactUs p:first-child{
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 121.9%;
@@ -528,7 +532,6 @@ border: none;
 }
 .container__contactUs p:nth-child(2){
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 155.4%;
@@ -602,3 +605,4 @@ input::placeholder{
   backdrop-filter: blur(15px);
   
 }
+
