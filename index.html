@@ -5,6 +5,8 @@
         <title>Santa Pasta</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
@@ -325,25 +327,70 @@
                     <div class="container__contactUs">
                         <p>Осатались вопросы?</p>
                         <p>Заполните небольшую форму и наш менеджер свяжется с вами в ближайшее время</p>
-                        <div class="floating-label-group">
-                            <input placeholder="Имя" name="contact_name" required class="form-control" type="text"/>
-                            <label class="floating-label">Имя</label>
+                        
+                        <form method="post">
+                            <div class="floating-label-group">
+                                <input placeholder="Имя" name="contact_name" required class="form-control" type="text"/>
+                                <label class="floating-label">Имя</label>
+                            </div>
+                            <div class="floating-label-group">
+                                <input placeholder="Телефон" name="contact_number" required class="form-control" type="tel"/>
+                                <label class="floating-label">Телефон</label>
+                            </div>
+                            <div class="floating-label-group">
+                                <input placeholder="E-mail" name="contact_email" required class="form-control" type="email"/>
+                                <label class="floating-label">E-Mail</label>
+                            </div>
+                            <button type="submit" class="contactUs__button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="container footer__fill">
+                        <div class="navigation">
+                            <div class="navigation__LogoImage">
+                                <img src="img/logo2.png" alt="">
+                            </div>
+                            <div class="navigation__Navbar">
+                                <ul class="navbar-navNavigation">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">О компании</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Паста короткая</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Паста длинная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Доставка</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Контакты</a>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="floating-label-group">
-                            <input placeholder="Телефон" name="contact_number" required class="form-control" type="tel"/>
-                            <label class="floating-label">Телефон</label>
+                        <div class="various">
+                            <div class="various__SearchBar">
+                                <input class="form-control footer_search" type="text" placeholder="Search" aria-label="Search">
+                                <div class="various__SearchBarIcons">
+                                    <img src="img/vk.png" alt="">
+                                </div>
+                            </div>
+                            <div class="various__Phone">
+                                <div class="various__PhoneNumber">+7 351 233-06-01</div>
+                                <div class="various__Phonebutton">
+                                    <button class="various__PhonebuttonButton"></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="floating-label-group">
-                            <input placeholder="E-mail" name="contact_email" required class="form-control" type="email"/>
-                            <label class="floating-label">E-Mail</label>
-                        </div>
-                        <button class="contactUs__button">Отправить</button>
                     </div>
                 </div>
             </div>
+
         </main>
 
-        <div class="footer"></div>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

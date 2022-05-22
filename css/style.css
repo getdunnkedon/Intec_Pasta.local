@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Montserrat';
   font-weight: 700;
-  src: local('../fonts/Montserrat-Regular.woff'), url('../fonts/Montserrat-Bold.woff') format('woff'), /* IE6-IE8 */;
+  src: local('') format('woff'), url('../fonts/Montserrat-Bold.woff') format('woff') /* IE6-IE8 */;
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 600;
-  src: local('../fonts/Montserrat-Regular.woff'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), /* IE6-IE8 */;
+  src: local('') format('woff'), url('../fonts/Montserrat-SemiBold.woff') format('woff') /* IE6-IE8 */;
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 500;
-  src: local('../fonts/Montserrat-Regular.woff'), url('../fonts/Montserrat-Medium.woff') format('woff'), /* IE6-IE8 */;
+  src: local('') format('woff'), url('../fonts/Montserrat-Medium.woff') format('woff') /* IE6-IE8 */;
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 400;
-  src: local('../fonts/Montserrat-Regular.woff'), url('../fonts/Montserrat-Regular.woff') format('woff'), /* IE6-IE8 */;
+  src: local('') format('woff'), url('../fonts/Montserrat-Regular.woff') format('woff') /* IE6-IE8 */;
 }
 .wrapper {
   width: 100%;
@@ -451,7 +451,7 @@
 }
 .block__adresses {
   list-style: none;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 .block__adresses li:before {
   content: ">";
@@ -470,23 +470,23 @@
 /**/
 .flex__Questions {
   display: flex;
+  height: 697px;
   align-items: center;
 }
 .pasta__Questions {
   height: 966px;
   display: flex;
+  flex-direction: column;
   background: linear-gradient(89.57deg, rgba(0, 0, 0, 0.72) 2.28%, rgba(0, 0, 0, 0) 76.28%), linear-gradient(89.84deg, #2D3134 53.99%, rgba(38, 43, 47, 0.58) 84.44%), url('../img/questionsBG.png');
   background-repeat: no-repeat;
   background-position: right;
 }
 .container__contactUs {
-  height: 471px;
   width: 479px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 300px;
 }
 .container__contactUs p:first-child {
   font-family: 'Montserrat';
@@ -556,7 +556,71 @@ input::placeholder {
 }
 /**/
 .footer {
-  height: 271px;
-  background-color: black;
-  backdrop-filter: blur(15px);
+  height: 269px;
+  background: rgba(33, 33, 33, 0.47);
+  backdrop-filter: blur(5px);
+}
+.footer__fill {
+  color: white;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__LogoImage {
+  height: 45px;
+}
+.navigation__Navbar {
+  height: 45px;
+  width: 713px;
+}
+.navbar-navNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar-navNavigation li {
+  list-style-type: none;
+}
+.navbar-navNavigation .nav-link {
+  color: white;
+}
+/**/
+.various {
+  display: flex;
+  justify-content: space-between;
+}
+.various__SearchBar {
+  width: 600px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_search {
+  width: 420px;
+}
+.various__SearchBarIcons {
+  width: 120px;
+  height: 45px;
+  background-color: white;
+}
+.various__Phone {
+  width: 363px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.various__PhoneNumber {
+  width: 160px;
+  height: 45px;
+  background-color: violet;
+}
+.various__Phonebutton {
+  width: 175px;
+  height: 45px;
+  background-color: wheat;
+}
+.various__PhonebuttonButton {
+  width: 175px;
+  height: 45px;
 }
