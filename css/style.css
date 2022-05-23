@@ -40,6 +40,13 @@
   align-items: center;
   justify-content: space-between;
 }
+.pasta__nav {
+  width: 100%;
+}
+.navbar-toggler {
+  background-image: url('../img/burgerMenu.png');
+  align-self: flex-end;
+}
 .nav-item {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -126,6 +133,64 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center right -190px, left;
 }
+@media (min-width: 320px) {
+  .wrapper__doubleBG {
+    height: 920px;
+  }
+  .pasta__OurTeam {
+    height: 1039px;
+  }
+  .pasta__ourProducts {
+    height: 1040px;
+  }
+  .pasta__AboutUs {
+    height: 1030px;
+  }
+  .pasta__Delivery {
+    height: 772px;
+  }
+  .pasta__DeliveryZone {
+    height: 949px;
+  }
+  .pasta__Questions {
+    height: 1327px;
+  }
+  .flex__Questions {
+    height: 647px;
+  }
+  .footer {
+    height: 680px;
+  }
+}
+@media (min-width: 1080px) {
+  .wrapper__doubleBG {
+    height: 616px;
+  }
+  .pasta__OurTeam {
+    height: 823px;
+  }
+  .pasta__ourProducts {
+    height: 1029px;
+  }
+  .pasta__AboutUs {
+    height: 616px;
+  }
+  .pasta__Delivery {
+    height: 621px;
+  }
+  .pasta__DeliveryZone {
+    height: 540px;
+  }
+  .pasta__Questions {
+    height: 966px;
+  }
+  .flex__Questions {
+    height: 697px;
+  }
+  .footer {
+    height: 269px;
+  }
+}
 .container__imagetext {
   display: flex;
   position: relative;
@@ -134,7 +199,7 @@
 .container__text {
   display: flex;
   flex-wrap: wrap;
-  width: 464px;
+  width: 39.3%;
   height: 349px;
   align-items: center;
   margin-left: 48%;
@@ -161,6 +226,9 @@
   position: absolute;
   top: 62px;
   left: -127px;
+}
+.row_test {
+  align-self: center;
 }
 /**/
 .pasta__OurTeam {
@@ -198,11 +266,12 @@
 .team__card {
   display: flex;
   align-items: flex-end;
+  width: 81.8%;
 }
 .team__description {
   padding-left: 30px;
   height: 322px;
-  width: 505px;
+  width: 55.3%;
 }
 .team__descriptionTittle h2:first-child {
   font-family: 'Montserrat';
@@ -248,7 +317,7 @@
 }
 .pasta_ourProductsSelector {
   height: 729px;
-  width: 1213px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -297,7 +366,7 @@
   justify-content: space-between;
 }
 .card {
-  width: 278px;
+  width: 23.5%;
 }
 .card-body {
   display: flex;
@@ -353,7 +422,7 @@
 }
 .container__AboutUsBox {
   height: 381px;
-  width: 514px;
+  width: 43.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -418,7 +487,7 @@
 }
 .container__blockzoneDelivery {
   background: white;
-  width: 410px;
+  width: 34.7%;
   height: 540px;
   align-items: center;
   display: flex;
@@ -428,7 +497,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 287px;
+  width: 80%;
   height: 365px;
 }
 .container__zoneDelivery p:first-child {
@@ -482,7 +551,7 @@
   background-position: right;
 }
 .container__contactUs {
-  width: 479px;
+  width: 40.5%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -562,6 +631,10 @@ input::placeholder {
 }
 .footer__fill {
   color: white;
+  display: flex;
+  height: 269px;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .navigation {
   display: flex;
@@ -572,7 +645,7 @@ input::placeholder {
 }
 .navigation__Navbar {
   height: 45px;
-  width: 713px;
+  width: 60%;
 }
 .navbar-navNavigation {
   display: flex;
@@ -591,36 +664,48 @@ input::placeholder {
   justify-content: space-between;
 }
 .various__SearchBar {
-  width: 600px;
+  width: 50%;
   height: 45px;
   display: flex;
   justify-content: space-between;
 }
 .footer_search {
-  width: 420px;
+  width: 70%;
 }
 .various__SearchBarIcons {
-  width: 120px;
+  width: 20%;
   height: 45px;
   background-color: white;
 }
 .various__Phone {
-  width: 363px;
+  width: 31%;
   height: 45px;
   display: flex;
   justify-content: space-between;
 }
 .various__PhoneNumber {
-  width: 160px;
+  width: 43%;
   height: 45px;
   background-color: violet;
 }
 .various__Phonebutton {
-  width: 175px;
+  width: 47%;
   height: 45px;
-  background-color: wheat;
 }
 .various__PhonebuttonButton {
-  width: 175px;
   height: 45px;
+  width: 100%;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.copyright {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
