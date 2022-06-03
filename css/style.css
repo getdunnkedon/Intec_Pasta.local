@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Montserrat';
   font-weight: 700;
-  src: local('') format('woff'), url('../fonts/Montserrat-Bold.woff') format('woff') /* IE6-IE8 */;
+  src: local('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 600;
-  src: local('') format('woff'), url('../fonts/Montserrat-SemiBold.woff') format('woff') /* IE6-IE8 */;
+  src: local('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 500;
-  src: local('') format('woff'), url('../fonts/Montserrat-Medium.woff') format('woff') /* IE6-IE8 */;
+  src: local('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.woff') format('woff');
 }
 @font-face {
   font-family: 'Montserrat';
   font-weight: 400;
-  src: local('') format('woff'), url('../fonts/Montserrat-Regular.woff') format('woff') /* IE6-IE8 */;
+  src: local('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.woff') format('woff');
 }
 .wrapper {
   width: 100%;
@@ -236,6 +236,10 @@
   height: 823px;
   background-color: #EEDEBF;
 }
+.container__pasta__OurTeam {
+  display: flex;
+  flex-direction: column;
+}
 .ourTeamTittle {
   display: flex;
   margin-top: 170px;
@@ -343,6 +347,9 @@
   border: 1px solid #606060;
   box-sizing: border-box;
   border-radius: 22px;
+}
+.ourProductsSelector__Button :hover {
+  background-color: blueviolet;
 }
 .ourProductsSelector__Filter {
   height: 27px;
@@ -471,7 +478,6 @@
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
-  line-height: 168.4%;
   border-bottom: 1px solid #EBC79E;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -675,7 +681,8 @@ input::placeholder {
 .various__SearchBarIcons {
   width: 20%;
   height: 45px;
-  background-color: white;
+  background-color: transparent;
+  padding-top: 10px;
 }
 .various__Phone {
   width: 31%;
@@ -686,7 +693,8 @@ input::placeholder {
 .various__PhoneNumber {
   width: 43%;
   height: 45px;
-  background-color: violet;
+  background-color: transparent;
+  padding-top: 10px;
 }
 .various__Phonebutton {
   width: 47%;
