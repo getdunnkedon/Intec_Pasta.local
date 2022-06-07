@@ -300,7 +300,7 @@
 }
 /**/
 .pasta__Examples {
-  height: 895px;
+  height: auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -311,6 +311,7 @@
 .pasta__exampleCard {
   width: 34%;
   height: auto;
+  transition: 0.5s all ease-in-out;
 }
 /**/
 .pasta__ourProducts {
@@ -318,6 +319,9 @@
   height: 1029px;
   display: flex;
   align-items: center;
+}
+.zoom:hover {
+  transform: scale(1.03);
 }
 .pasta_ourProductsSelector {
   height: 729px;
@@ -371,6 +375,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: scroll;
 }
 .card {
   width: 23.5%;
@@ -695,6 +700,9 @@ input::placeholder {
   height: 45px;
   background-color: transparent;
   padding-top: 10px;
+}
+.various__PhoneNumber a {
+  color: white;
 }
 .various__Phonebutton {
   width: 47%;
